@@ -1,9 +1,32 @@
-<!DOCTYPE html>
+git checkout -b feature/espace-vendeurgit add .
+git commit -m "Ajout du formulaire d'inscription vendeur et profil"
+git push origin feature/espace-vendeur<!-- Formulaire d'inscription -->
+<form id="form-inscription">
+  <h2>Créer un compte</h2>
+  
+  <label for="nom">Nom complet ou Nom de boutique :</label>
+  <input type="text" id="nom" required placeholder="Ex: Jean Dupont ou Ma Boutique">
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" required placeholder="votre@email.com">
+
+  <label for="password">Mot de passe :</label>
+  <input type="password" id="password" required>
+
+  <!-- Choix du type de compte -->
+  <label for="role">Vous êtes :</label>
+  <select id="role">
+    <option value="client">Client (Acheteur)</option>
+    <option value="vendeur">Vendeur</option>
+  </select>
+
+  <button type="submit">S'inscrire</button>
+</form><!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sid-VenteRDC</title>
+  <title>Sid-Vente</title>
 
   <style>
     * {
@@ -286,4 +309,10 @@
         produit.style.display = "block";
       } else {
         produit.style.display = "none";
-      
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
