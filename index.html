@@ -293,3 +293,30 @@
 
 </body>
   </html>
+<!-- Formulaire pour que le Vendeur ajoute son profil et ses articles -->
+<form id="form-vendeur">
+  <h2>Espace Vendeur : Ajouter un article / Profil</h2>
+
+  <!-- Informations de la boutique -->
+  <label for="bio">Présentation / Détails de la boutique :</label>
+  <textarea id="bio" placeholder="Décrivez votre boutique ou votre activité..."></textarea>
+
+  <label for="photo-profil">Photo de profil ou Logo :</label>
+  <input type="file" id="photo-profil" accept="image/*">
+
+  <hr>
+
+  <!-- Formulaire d'ajout d'un produit -->
+  <h3>Ajouter un produit à vendre</h3>
+
+  <label for="titre-produit">Nom du produit :</label>
+  <input type="text" id="titre-produit" placeholder="Ex: Chaussures en cuir">
+
+  <label for="prix-produit">Prix (€) :</label>
+  <input type="number" id="prix-produit" placeholder="25">
+
+  <label for="photo-produit">Photo du produit :</label>
+  <input type="file" id="photo-produit" accept="image/*">
+
+  <button type="submit">Publier</button>
+</form>
